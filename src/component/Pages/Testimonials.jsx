@@ -16,6 +16,7 @@ const Testimonials = () => {
         {/*  UNDERLINE  */}
       <div className="w-[100%] h-[1px] bg-gray-400 mx-3 my-4 pr-5"></div>
 
+        {/* TITLE */}
       <div className="text-center text-4xl font-semibold mt-8">
         <h1>Words On The Street</h1>
       </div>
