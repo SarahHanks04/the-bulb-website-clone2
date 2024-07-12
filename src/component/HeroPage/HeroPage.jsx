@@ -14,8 +14,7 @@ const HeroPage = () => {
       description:
         "We nurture, equip & build Africa's rising tech talents through immersive training programs designed to meet the innovations of the future.",
       button: "Learn More",
-      // src: "https://www.youtube.com/embed/FSTzqzwYfF0?si=IGQPlTvJqLIMRrc4",
-      src: "https://www.thebulb.africa/static/media/hero2.5de043f6b411b98fcf84.jpg",
+      video: "https://www.youtube.com/embed/FSTzqzwYfF0?si=IGQPlTvJqLIMRrc4",
     },
 
     // SLIDE 2
@@ -35,8 +34,7 @@ const HeroPage = () => {
       description:
         "We educate and connect tech talents from Africa to job opportunities in Africa and across the globe.",
       button: "Hire Our Talents",
-      // src: "https://www.youtube.com/embed/LkSKJ3EXIus?si=fuoyGGTe3q5hM1lK",
-      src: "https://www.thebulb.africa/static/media/hero3.b8dd425e22f6539dcd86.jpg",
+      video: "https://www.youtube.com/embed/LkSKJ3EXIus?si=fuoyGGTe3q5hM1lK",
     },
 
     // SLIDE 4
@@ -56,8 +54,7 @@ const HeroPage = () => {
       description:
         "We run programs that inspire and boost female participation in tech.",
       button: "Learn More",
-      // src: "https://www.youtube.com/embed/22jRoSCSFhM?si=6fs54hpu9Lffu9Nj",
-      src: "https://www.thebulb.africa/static/media/hero1.31aaaa093328a58086e8.jpg"
+      video: "https://www.youtube.com/embed/22jRoSCSFhM?si=6fs54hpu9Lffu9Nj",
     },
 
     // SLIDE 6
@@ -95,7 +92,7 @@ const HeroPage = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="flex-none w-full flex flex-col lg:flex-row justify-between gap-8 p-5  lg:p-10"
+              className="flex-none w-full flex flex-col lg:flex-row justify-between gap-8 p-5  lg:p-10 md:p-4"
             >
               <div className="lg:w-1/2 pt-16">
                 <p className="font-medium text-[#13162D] text-3xl py-4">
@@ -116,7 +113,19 @@ const HeroPage = () => {
               </div>
 
               <div className="img py-4 pb-16 lg:w-[50%]">
-                <img src={slide.src} width="100%" height="150px" alt="" />
+                {slide.video ? (
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src={slide.video}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <img src={slide.src} width="100%" height="150px" alt="" />
+                )}
               </div>
             </div>
           ))}
