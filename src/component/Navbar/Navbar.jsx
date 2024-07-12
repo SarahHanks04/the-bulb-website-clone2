@@ -51,6 +51,7 @@ const Navbar = () => {
 
   return (
     <div className="container bg-[#f7f8fa] min-h-20 w-full">
+
       {/*  MARQUEE  */}
       <div className="marquee-container bg-[#FDBF17] z-[9999] fixed flex justify-center transition-all p-1 w-full whitespace-nowrap">
         <div className="font-400 underline text-md sm:text-xm md:text-sm lg:text-x1 animation-zoom-in-out animate-marquee inline-block">
@@ -60,6 +61,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+
       {/*   MAIN NAVBAR   */}
       <nav className="bg-[#f7f8fa] shadow-lg fixed p-1 flex items-center justify-between w-full mt-7 pb-4 z-50">
         <div className="text-xl">
