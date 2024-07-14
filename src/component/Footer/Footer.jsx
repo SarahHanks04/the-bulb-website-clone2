@@ -238,7 +238,7 @@ const Footer = () => {
         <div className="mt-5 flex flex-col md:flex-row justify-center">
           <input
             type="text"
-            placeholder="Enter Your Email Here..."
+            placeholder="Enter Your Email..."
             className="p-3 rounded-full placeholder-gray-400 placeholder-opacity-75 pl-10 outline-none focus:none w-full md:w-[30%] text-black mb-4 md:mb-0 md:mr-4"
           />
           <button
