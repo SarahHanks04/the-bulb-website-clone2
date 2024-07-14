@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord, faFacebookF, faInstagram, faLinkedinIn, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
 
@@ -229,7 +232,7 @@ const Footer = () => {
       <main className="p-4">
 
         <div className="mt-20 font-gothic md:w-full">
-          <h1 className="text-center font-extrabold text-[34px]">Stay In The Loop!</h1>
+          <h1 className="text-center font-extrabold text-[34px] transition-transform duration-300 transform hover:scale-95">Stay In The Loop!</h1>
           <p className="text-center font-normal text-[18px] pt-5">
             Sign up for our newsletter to receive updates on exciting new features and product releases.
           </p>
@@ -237,7 +240,7 @@ const Footer = () => {
 
         <div className="mt-5 flex flex-col md:flex-row justify-center">
           <input
-            type="text"
+            type="email"
             placeholder="Enter Your Email..."
             className="p-3 rounded-full placeholder-gray-400 placeholder-opacity-75 pl-10 outline-none focus:none w-full md:w-[30%] text-black mb-4 md:mb-0 md:mr-4"
           />
@@ -269,7 +272,7 @@ const Footer = () => {
 
           <div className="flex">
             <span className="hover:underline hover:text-blue-700"><a href="">Terms Of Use</a></span>
-            <div className="w-[1.5px] h-[24px] bg-[#FDBF17] ml-4"></div>
+            <div className="w-[1.4px] h-[24px] bg-[#FDBF17] ml-4"></div>
           </div>
 
           <div>
@@ -290,45 +293,39 @@ const Footer = () => {
 
             <ul className="flex flex-col md:flex-row justify-between gap-5">
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  twitt
+              <li className="text-[#FDBF17]">
+                <a href="https://www.facebook.com/ThebulbAfrica/">
+                  <FontAwesomeIcon icon = {faFacebookF} />
                 </a>
               </li>
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  insta
+              <li className="text-[#FDBF17]">
+                <a href="https://www.twitter.com/thebulbafrica">
+                  <FontAwesomeIcon icon= {faTwitter} />
                 </a>
               </li>
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  face
+              <li className="text-[#FDBF17]">
+                <a href="https://www.instagram.com/thebulbafrica/">
+                  <FontAwesomeIcon icon= {faInstagram} />
                 </a>
               </li>
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  link
+              <li className="text-[#FDBF17]">
+                <a href="https://discord.gg/v7uzp9xvjg">
+                  <FontAwesomeIcon icon= {faDiscord} />
                 </a>
               </li>
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  what
+              <li className="text-[#FDBF17]">
+                <a href="https://www.tiktok.com/@thebulbafrica? t=8VICx62j0x4& r=1">
+                  <FontAwesomeIcon icon= {faTiktok} />
                 </a>
               </li>
 
-              <li>
-                <a href="">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
-                  skyp
+              <li className="text-[#FDBF17]">
+                <a href="https://www.linkedin.com/company/64547766/">
+                  <FontAwesomeIcon icon= {faLinkedinIn} />
                 </a>
               </li>
 
