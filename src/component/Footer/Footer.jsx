@@ -1,6 +1,8 @@
 import React from "react";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#13162D] min-h-screen text-white py-10 px-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
@@ -273,7 +275,7 @@ const Footer = () => {
 
           {/* COPYRIGHT */}
           <div>
-            <p>Copyright @ 2024 The Bulb All Right Reserved</p>
+            <p>Copyright &copy; {currentYear} The Bulb. All Rights Reserved.</p>
           </div>
 
           <div>
@@ -282,21 +284,57 @@ const Footer = () => {
 
           {/* SOCIAL MEDIA LINKS */}
           <div className="flex flex-col justify-between">
+
             <ul className="flex flex-col md:flex-row justify-between">
-              <li>arge</li>
-              <li>arge</li>
-              <li>arge</li>
-              <li>arge</li>
-              <li>arge</li>
-              <li>arge</li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                </a>
+              </li>
+
             </ul>
+
           </div>
+
         </div>
 
       </main>
 
     </footer>
+
   );
+  
 }
 
 export default Footer;
