@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
 
+  // FOR COPYRIGHT AT THE FOOTER MAIN
   const currentYear = new Date().getFullYear();
+  // ENDS
+
   return (
     <footer className="bg-[#13162D] min-h-screen text-white py-10 px-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
@@ -285,41 +288,47 @@ const Footer = () => {
           {/* SOCIAL MEDIA LINKS */}
           <div className="flex flex-col justify-between">
 
-            <ul className="flex flex-col md:flex-row justify-between">
+            <ul className="flex flex-col md:flex-row justify-between gap-5">
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  twitt
                 </a>
               </li>
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  insta
                 </a>
               </li>
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  face
                 </a>
               </li>
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  link
                 </a>
               </li>
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  what
                 </a>
               </li>
 
               <li>
                 <a href="">
                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAA…RERERERERERERERG1+gmukrANZlItDwAAAABJRU5ErkJggg==" alt="" />
+                  skyp
                 </a>
               </li>
 
@@ -334,7 +343,7 @@ const Footer = () => {
     </footer>
 
   );
-  
+
 }
 
 export default Footer;
