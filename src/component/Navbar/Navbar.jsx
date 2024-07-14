@@ -63,15 +63,11 @@ const Navbar = () => {
       </div>
 
       {/*   MAIN NAVBAR   */}
-      <nav className="bg-[#f7f8fa] shadow-lg fixed p-1 flex items-center justify-between w-full mt-7 pb-4 z-50">
-        <div className="text-xl">
-          <img
-            className="img ml-7"
-            src="https://www.thebulb.africa/static/media/the-bulb-logo-dark.13fefe6e202b737ffbee.png"
-            alt="The Bulb Africa"
-            width={150}
-            height={200}
-          />
+      <nav className="bg-[#f7f8fa] shadow-lg fixed p-1 flex items-center justify-between w-full mt-7 pb-4 z-50 pt-2">
+        <div className="text-xl pl-8">
+          <a className="max-w-35" href="#">
+            <img src="https://www.thebulb.africa/static/media/bulblogoblue.f8aa821e41a7a4a52e37c9b8a25a773f.svg" alt="Logo" />
+          </a>
         </div>
 
         <ul className="hidden md:flex items-center space-x-4 text-gray-700 gap-6 font-normal">
