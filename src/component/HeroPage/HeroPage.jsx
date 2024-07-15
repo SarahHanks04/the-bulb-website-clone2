@@ -131,6 +131,9 @@ const HeroPage = () => {
           ))}
         </div>
 
+
+        {/* CAROUSEL INDICATOR */}
+
         {/* FOR CHEVRON LEFT */}
         <button
           className="absolute top-3/4 left-5 mt-14 transform -translate-y-1/2"
@@ -154,6 +157,18 @@ const HeroPage = () => {
             className="text-gray-700 p-3 w-5 h-5 rounded-full border-2 border-black"
           />
         </button>
+
+
+        {/* PAGINATION DOTS */}
+        <div className="absolute bottom-10 gap-1 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-[#FDBF17]" : "bg-gray-300"}`}
+              onClick={() => setCurrentSlide(index)}
+            ></div>
+          ))}
+        </div>
       </article>
     </section>
   );
