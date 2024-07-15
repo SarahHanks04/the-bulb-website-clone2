@@ -50,7 +50,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="container bg-[#f7f8fa] min-h-20 w-full">
+    <section className="container bg-[#f7f8fa] min-h-20 w-full">
 
       {/*  MARQUEE  */}
       <div className="marquee-container bg-[#FDBF17] z-[9999] fixed flex justify-center transition-all p-1 w-full whitespace-nowrap">
@@ -322,7 +322,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

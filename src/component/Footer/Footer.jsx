@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#13162D] min-h-screen text-white py-10 px-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      <main className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
         {/* COLUMN ONE START */}
         <div className="col-span-1">
           <img
@@ -224,10 +224,9 @@ const Footer = () => {
 
         </div>
 
-      </div>
+      </main>
 
 
-      {/* FOOTER NEWSLETTER BELOW */}
       {/* FOOTER NEWSLETTER BELOW */}
       <main className="p-4">
 

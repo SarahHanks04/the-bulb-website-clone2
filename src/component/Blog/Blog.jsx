@@ -3,8 +3,8 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen p-8 overflow-x-hidden">
-      <div className="mx-10 mt-10">
+    <section className="min-h-screen p-8 overflow-x-hidden">
+      <article className="mx-10 mt-10">
         <h1 className="text-[#13162D] font-bold text-2xl lg:text-4xl pb-6 relative">
           Lighting Up Africa The Bulb Way
         </h1>
@@ -15,10 +15,10 @@ const Blog = () => {
           professional networks through its communities, and fascinating career
           opportunities through its recruitment engine.
         </p>
-      </div>
+      </article>
 
       {/* MAPPING THE BLOGCARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mx-5 mt-14 mr-6 justify-center">
+      <main className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mx-5 mt-14 mr-6 justify-center">
 
         {/* MAPPING THROUGH */}
         {BlogCard.map((BlogCard, index) => (
@@ -38,7 +38,7 @@ const Blog = () => {
 
           </div>
         ))}
-      </div>
+      </main>
 
         {/*  IMAGE  */}
       <div className=" mx-5 mt-4 mb-14 flex justify-center lg:absolute lg:right-0 lg:bottom-[-420%] lg:mx-10 lg:ml-5">
@@ -48,7 +48,7 @@ const Blog = () => {
           className="w-full max-w-[600px] h-auto"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

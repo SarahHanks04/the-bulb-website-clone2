@@ -5,7 +5,7 @@ import Blog from './component/Blog/Blog';
 import Footer from './component/Footer/Footer';
 import HeroPage from './component/HeroPage/HeroPage';
 import Navbar from './component/Navbar/Navbar';
-import Testimonials from './component/Pages/Testimonials';
+import Testimonials from './component/Testimonials/Testimonials';
 import Portfolio from './component/Portfolio/Portfolio';
 
 function App() {

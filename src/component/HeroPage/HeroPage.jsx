@@ -83,8 +83,8 @@ const HeroPage = () => {
   };
 
   return (
-    <div className="bg-[#f7f8fa] px-6 pb-4">
-      <div className="relative overflow-hidden pt-0">
+    <section className="bg-[#f7f8fa] px-6 pb-4">
+      <article className="relative overflow-hidden pt-0">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -154,8 +154,8 @@ const HeroPage = () => {
             className="text-gray-700 p-3 w-5 h-5 rounded-full border-2 border-black"
           />
         </button>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

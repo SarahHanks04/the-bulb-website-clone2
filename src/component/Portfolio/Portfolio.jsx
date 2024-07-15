@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Portfolio = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-4 overflow-x-hidden">
+    <section className="bg-gray-100 min-h-screen p-4 overflow-x-hidden">
 
       <div className="mt-14 text-center">
 
@@ -22,7 +22,7 @@ const Portfolio = () => {
       </div>
 
       {/* MAPPING THE PORTFOLIO CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 mx-4 mt-14 mb-10 justify-between">
+      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 mx-4 mt-14 mb-10 justify-between">
       
         {Card.map((card, index) => (
           <div
@@ -45,8 +45,8 @@ const Portfolio = () => {
             </div>
           </div>
         ))}
-      </div>
-    </div>
+      </main>
+    </section>
   );
 };
 

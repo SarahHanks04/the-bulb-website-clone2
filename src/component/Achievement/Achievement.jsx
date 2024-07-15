@@ -2,7 +2,7 @@ import React from "react";
 
 const Achievement = () => {
   return (
-    <div
+    <section
       className="relative h-[70%] bg-cover bg-center mt-[3rem]"
       style={{
         backgroundImage:
@@ -11,7 +11,7 @@ const Achievement = () => {
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <div className="mt-20 px-10">
+      <main className="mt-20 px-10">
 
         <div className="relative z-10 h-full">
           <h1 className="p-6 text-3xl font-bold font-gothic text-[#E4E4E7] md:text-5xl lg:text-6xl mb-14">
@@ -33,9 +33,9 @@ const Achievement = () => {
 
         </div>
 
-      </div>
+      </main>
       
-    </div>
+    </section>
 
   );
 };

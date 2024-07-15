@@ -5,7 +5,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Testimonials = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4 overflow-x-hidden">
+    <section className="min-h-screen bg-gray-100 p-4 overflow-x-hidden">
 
       {/* THE TITLE & HEADING */}
       <div className="mx-16 mt-10">
@@ -22,7 +22,7 @@ const Testimonials = () => {
       </div>
 
       {/*   MAPPING THE CARDS/TESTIMONIALS   */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-5 mt-14 justify-center">
+      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-5 mt-14 justify-center">
 
         {Card.map((Card, index) => (
           <div
@@ -54,7 +54,7 @@ const Testimonials = () => {
 
           </div>
         ))}
-      </div>
+      </main>
 
             {/* FOR THE BUTTON */}
       <div className="text-center mt-12">
@@ -63,7 +63,7 @@ const Testimonials = () => {
         </button>
       </div>
 
-    </div>
+    </section>
   );
 };
 
