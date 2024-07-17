@@ -71,6 +71,8 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex items-center space-x-4 text-gray-700 gap-6 font-normal">
+
+          {/* NAVBAR TEXT-ONE */}
           <li
             className="relative group hover:text-gray-900"
             onMouseEnter={() => handleMouseEnter(1)}
@@ -83,6 +85,8 @@ const Navbar = () => {
                 className="ml-2"
               />
             </span>
+
+            {/* DROPDOWN ONE */}
             <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg hidden group-hover:block hover:text-gray-900">
               <li className="px-4 py-2 hover:bg-gray-100">
                 Corporate Training
@@ -92,6 +96,7 @@ const Navbar = () => {
             </ul>
           </li>
 
+            {/* NAVBAR TEXT-TWO */}
           <li
             className="relative group hover:text-gray-900"
             onMouseEnter={() => handleMouseEnter(2)}
@@ -104,6 +109,8 @@ const Navbar = () => {
                 className="ml-2"
               />
             </span>
+
+            {/* DROPDOWN TWO */}
             <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg hidden group-hover:block hover:text-gray-900">
               <li className="px-4 py-2 hover:bg-gray-100">
                 Fellowship Programes
@@ -113,6 +120,7 @@ const Navbar = () => {
             </ul>
           </li>
 
+            {/* NAVBAR TEXT-THREE */}
           <li
             className="relative group hover:text-gray-900"
             onMouseEnter={() => handleMouseEnter(3)}
@@ -125,14 +133,17 @@ const Navbar = () => {
                 className="ml-2"
               />
             </span>
+
+            {/* DROPDOWN-THREE */}
             <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg hidden group-hover:block hover:text-gray-900">
-              <li className="px-4 py-2 hover:bg-gray-100">Recruitment</li>
+              <li className="px-4 py-2 hover:bg-gray-100 ">Recruitment</li>
               <li className="px-4 py-2 hover:bg-gray-100">
                 Product Development
               </li>
             </ul>
           </li>
 
+            {/* NAVBAR TEXT-FOUR */}
           <li
             className="relative group hover:text-gray-900"
             onMouseEnter={() => handleMouseEnter(4)}
@@ -145,6 +156,8 @@ const Navbar = () => {
                 className="ml-2"
               />
             </span>
+
+            {/* DROPDOWN FOUR */}
             <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg hidden group-hover:block hover:text-gray-900">
               <li className="px-4 py-2 hover:bg-gray-100">About Us</li>
               <li className="px-4 py-2 hover:bg-gray-100">Blogs</li>
@@ -154,11 +167,13 @@ const Navbar = () => {
           </li>
         </ul>
 
+          {/* NAVBAR BUTTON */}
         <div className="hidden md:flex items-center space-x-4 mr-8 gap-6">
           <button className="bg-[#13162D] text-white px-4 py-2 rounded-3xl">
             Get Started
           </button>
 
+            {/* NAVBAR TEXT-FIVE */}
           <button
             className="relative group bg-transparent hover:text-gray-900 px-4 py-2 font-medium"
             onMouseEnter={() => handleMouseEnter(5)}
@@ -171,6 +186,8 @@ const Navbar = () => {
                 className="ml-5"
               />
             </span>
+
+            {/* DROPDOWN-FIVE */}
             <ul className="absolute left-0 right-0 mt-2 w-30 bg-white shadow-lg hidden group-hover:block text-gray-900">
               <li className="px-4 py-2 hover:bg-gray-100">For Students</li>
               <li className="px-4 py-2 hover:bg-gray-100">For Employee</li>
@@ -178,6 +195,7 @@ const Navbar = () => {
             </ul>
           </button>
         </div>
+
 
         {/*   HAMBUDGER MENU(BARS)    */}
 
