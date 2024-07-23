@@ -7,18 +7,20 @@ import HeroPage from './component/HeroPage/HeroPage';
 import Navbar from './component/Navbar/Navbar';
 import Testimonials from './component/Testimonials/Testimonials';
 import Portfolio from './component/Portfolio/Portfolio';
+import Talent from './component/Talent/Talent';
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      {/* <Navbar />
       <HeroPage />
-      <About />
-      <Testimonials />
+      <About /> */}
+      <Talent />
+      {/* <Testimonials />
       <Blog />
       <Achievement />
       <Portfolio />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
