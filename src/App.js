@@ -12,15 +12,15 @@ import Talent from './component/Talent/Talent';
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* <Navbar />
+      <Navbar />
       <HeroPage />
-      <About /> */}
+      <About />
       <Talent />
-      {/* <Testimonials />
+      <Testimonials />
       <Blog />
       <Achievement />
       <Portfolio />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
