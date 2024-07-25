@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="my-10 bg-gray-100">
+    <section className="my-10 py-[3rem] bg-gray-100">
       <main className="content mx-5 flex flex-col gap-6 lg:gap-10 lg:flex-row justify-between items-center md:flex-col">
         <div className=" lg:max-w-full md: max-w-full ml-8">
           <h1 className="text-[#13162D] font-semibold text-3xl lg:text-3xl pb-6 leading-normal">

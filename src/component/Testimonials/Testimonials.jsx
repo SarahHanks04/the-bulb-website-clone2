@@ -5,7 +5,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Testimonials = () => {
   return (
-    <section className="min-h-screen bg-gray-100 p-4 overflow-x-hidden">
+    <section className="min-h-screen bg-gray-100 p-4 overflow-x-hidden mt-[10rem]">
 
       {/* THE TITLE & HEADING */}
       <div className="mx-16 mt-10">
