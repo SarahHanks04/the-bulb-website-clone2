@@ -10,12 +10,12 @@ const Talent = () => {
 
         {/* THE TITLE */}
         <div className="flex w-full md:w-3/4 lg:w-full justify-between pt-5 mb-8">
-          <h1 className="text-4xl text-gray-700 ml-[8rem]">For Talents</h1>
-          <h1 className="text-4xl text-gray-700 mr-[8rem]">For Business</h1>
+          <h1 className="text-4xl text-gray-700 ml-[10rem]">For Talents</h1>
+          <h1 className="text-4xl text-gray-700 mr-[10rem]">For Business</h1>
         </div>
 
               {/*TEXT CENTERED */}
-        <div className="relative w-full md:w-3/4 lg:w-full p-4">
+        <main className="relative w-full md:w-3/4 lg:w-full p-4">
           {/* <!-- Vertical Line --> */}
           <div className="absolute inset-0 flex justify-center">
             <div className="w-1 bg-gray-300"></div>
@@ -182,32 +182,8 @@ const Talent = () => {
             </div>
           </div>
 
-        </div>
+        </main>
 
-        {/* THE LINE */}
-        {/* <div className="w-1 h-[50%] bg-gray-400 text-center py-[10px] mb-32"></div> */}
-
-        {/* FIRST CIRCLE */}
-        {/* <main className="absolute right-[18%]">
-          <div className="flex absolute right-[95%]">
-            <div className="">
-              <div className="flex items-center justify-center w-5 h-5 bg-yellow-100 rounded-full">
-                <div className="w-3 h-3 bg-[#FDBF17] rounded-full"></div>
-              </div>
-            </div>
-            <div className="w-16 h-[2px] bg-[#FDBF17]"></div>
-          </div>
-
-          <div className="text">
-            <h2 className="text-xl text-[#13162D] font-bold">
-              StartUp Academy
-            </h2>
-            <p>
-              We educate and offer training and mentorship to <br /> founders
-              who are at the begining of the start up <br /> journey.
-            </p>
-          </div>
-        </main> */}
       </article>
     </section>
   );
