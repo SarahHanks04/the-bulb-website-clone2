@@ -41,7 +41,7 @@ const Blog = () => {
       </main>
 
         {/*  IMAGE  */}
-      <div className=" mx-5 mt-4 mb-14 flex justify-center lg:absolute lg:right-0 lg:bottom-[-840%] lg:mx-10 lg:ml-5">
+      <div className=" mx-5 mt-4 mb-14 flex justify-center lg:absolute lg:right-0 lg:bottom-[-878%] lg:mx-10 lg:ml-5">
         <img
          src="https://www.thebulb.africa/static/media/serviceImage.e61be5ab538045c3b21e.png"
           alt=""
