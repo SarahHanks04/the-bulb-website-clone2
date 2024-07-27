@@ -8,12 +8,14 @@ import Navbar from './component/Navbar/Navbar';
 import Testimonials from './component/Testimonials/Testimonials';
 import Portfolio from './component/Portfolio/Portfolio';
 import Talent from './component/Talent/Talent';
+import Sponsor from './component/Sponsors/Sponsor';
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <HeroPage />
+      <Sponsor />
       <About />
       <Talent />
       <Testimonials />
