@@ -24,7 +24,7 @@ const Card = [
   {
     review: "This place is next level when it comes to Office Ergonomics. Every aspect ranging from the furnishing to the Polite employees and their seamlessly easy stress free recruitment process is just superb and standard! I believe it will be everyone's dream to work at a place like this.",
     name: "Kabiru Sambo",
-    ratings: 5, 
+    ratings: 3, 
   },
   
     // 5
