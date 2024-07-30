@@ -21,17 +21,23 @@ const Sponsor = () => {
   
     return () => clearInterval(interval);
   }, []);
+
+  const displayedImages = [
+    images[currentIndex],
+    images[(currentIndex + 1) % images.length],
+    images[(currentIndex + 2) % images.length],
+    images[(currentIndex + 3) % images.length]
+  ];
   
   return (
-    <div className="relative w-full h-64 overflow-hidden">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
-        </div>
-      ))}
+    <div className="overflow-hidden relative w-full h-64">
+      <div className="flex transition-transform duration-1000" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
+        {images.map((image, index) => (
+          <div key={index} className="flex-none w-1/4">
+            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
