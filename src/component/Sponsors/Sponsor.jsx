@@ -13,12 +13,16 @@ const images = [
 
 const Sponsor = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1 ) % images.length);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 1000); 
     }, 3000);
-  
     return () => clearInterval(interval);
   }, []);
 
@@ -31,13 +35,19 @@ const Sponsor = () => {
   
   return (
     <div className="overflow-hidden relative w-full h-64">
+
+      <header className="text-center font-bold text-3xl pt-6 pb-10">
+         <h1>Meet Some Of Our Partners</h1>
+      </header>
+
       <div className={`flex ${isTransitioning ? 'transition-transform duration-1000' : ''}`} style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
         {images.concat(images.slice(0, 4)).map((image, index) => (
           <div key={index} className="flex-none w-1/4">
-            <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
+            <img src={image} alt={`Slide ${index}`} className="" />
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
@@ -45,9 +55,7 @@ const Sponsor = () => {
 //   return (
 //     <section>
 //       <main className="py-14">
-//         <header className="text-center font-bold text-3xl pt-6 pb-10">
-//           <h1>Meet Some Of Our Partners</h1>
-//         </header>
+//         
 
 //         {/* <div className="flex">
 //           <img
