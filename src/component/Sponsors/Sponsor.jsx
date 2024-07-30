@@ -6,7 +6,9 @@ const images = [
   "https://static-00.iconduck.com/assets.00/wema-bank-icon-2048x1148-78xxm99q.png",
   "https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/GetFundedAfrica.jpeg",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUl-9r9mMim20lBDA0_Qh3eZz0h0UmVNzuwA&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYvZANqq_87nliOnsi4b7ktTG1dkSJhrTfg&s"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYvZANqq_87nliOnsi4b7ktTG1dkSJhrTfg&s",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT547jSiYMFa8Xp89Iiyq_P1lwyqhRCKy-DQA&s",
+  "https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png"
 ];
 
 const Sponsor = () => {
@@ -50,13 +52,13 @@ const Sponsor = () => {
             width={120}
           />
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT547jSiYMFa8Xp89Iiyq_P1lwyqhRCKy-DQA&s"
+            src=""
             alt=""
             width={200}
             height={60}
           />
           <img
-            src="https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png"
+            src=""
             alt=""
             width={150}
           />
