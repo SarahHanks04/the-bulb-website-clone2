@@ -51,59 +51,6 @@ const Sponsor = () => {
     </div>
   );
 };
-// const Sponsor = () => {
-//   return (
-//     <section>
-//       <main className="py-14">
-//         
 
-//         {/* <div className="flex">
-//           <img
-//             src=""
-//             alt=""
-//             width={300}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={250}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={250}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={150}
-//             height={50}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={120}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={120}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={200}
-//             height={60}
-//           />
-//           <img
-//             src=""
-//             alt=""
-//             width={150}
-//           />
-//         </div> */}
-//       </main>
-//     </section>
-//   );
-// };
 
 export default Sponsor;
