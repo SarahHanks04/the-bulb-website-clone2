@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const images = [
   "https://twl.techcabal.com/wp-content/uploads/2019/02/Lagos-Initiative.png",
@@ -12,7 +12,7 @@ const images = [
 ];
 
 const ImageSlider = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0),
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,62 +22,74 @@ const ImageSlider = () => {
     return () => clearInterval(interval);
   }, []);
   
-}
-const Sponsor = () => {
   return (
-    <section>
-      <main className="py-14">
-        <header className="text-center font-bold text-3xl pt-6 pb-10">
-          <h1>Meet Some Of Our Partners</h1>
-        </header>
-
-        {/* <div className="flex">
-          <img
-            src=""
-            alt=""
-            width={300}
-          />
-          <img
-            src=""
-            alt=""
-            width={250}
-          />
-          <img
-            src=""
-            alt=""
-            width={250}
-          />
-          <img
-            src=""
-            alt=""
-            width={150}
-            height={50}
-          />
-          <img
-            src=""
-            alt=""
-            width={120}
-          />
-          <img
-            src=""
-            alt=""
-            width={120}
-          />
-          <img
-            src=""
-            alt=""
-            width={200}
-            height={60}
-          />
-          <img
-            src=""
-            alt=""
-            width={150}
-          />
-        </div> */}
-      </main>
-    </section>
+    <div className="relative w-full h-64 overflow-hidden">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
+        </div>
+      ))}
+    </div>
   );
 };
+// const Sponsor = () => {
+//   return (
+//     <section>
+//       <main className="py-14">
+//         <header className="text-center font-bold text-3xl pt-6 pb-10">
+//           <h1>Meet Some Of Our Partners</h1>
+//         </header>
+
+//         {/* <div className="flex">
+//           <img
+//             src=""
+//             alt=""
+//             width={300}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={250}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={250}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={150}
+//             height={50}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={120}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={120}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={200}
+//             height={60}
+//           />
+//           <img
+//             src=""
+//             alt=""
+//             width={150}
+//           />
+//         </div> */}
+//       </main>
+//     </section>
+//   );
+// };
 
 export default Sponsor;
