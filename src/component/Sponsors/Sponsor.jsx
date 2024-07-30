@@ -43,11 +43,11 @@ const Sponsor = () => {
       <div className={`flex ${isTransitioning ? 'transition-transform duration-1000' : ''}`} style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
         {images.concat(images.slice(0, 4)).map((image, index) => (
           <div key={index} className="flex-none w-1/4">
-            <img src={image} alt={`Slide ${index}`} className="" />
+            <img src={image} alt={`Slide ${index}`} width={200} height={60} className="py-10" />
           </div>
         ))}
       </div>
-      
+
     </div>
   );
 };
