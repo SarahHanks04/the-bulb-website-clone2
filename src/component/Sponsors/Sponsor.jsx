@@ -11,7 +11,7 @@ const images = [
   "https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png"
 ];
 
-const ImageSlider = () => {
+const Sponsor = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
