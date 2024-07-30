@@ -19,7 +19,7 @@ const Sponsor = () => {
           <h1>Meet Some Of Our Partners</h1>
         </header>
 
-        <div className="flex">
+        {/* <div className="flex">
           <img
             src=""
             alt=""
@@ -62,7 +62,7 @@ const Sponsor = () => {
             alt=""
             width={150}
           />
-        </div>
+        </div> */}
       </main>
     </section>
   );
