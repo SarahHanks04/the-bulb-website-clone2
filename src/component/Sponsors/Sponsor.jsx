@@ -12,11 +12,11 @@ const images = [
 ];
 
 const Sponsor = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1 ) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1 ) % images.length);
     }, 3000);
   
     return () => clearInterval(interval);
@@ -31,8 +31,8 @@ const Sponsor = () => {
   
   return (
     <div className="overflow-hidden relative w-full h-64">
-      <div className="flex transition-transform duration-1000" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
-        {images.map((image, index) => (
+      <div className={`flex ${isTransitioning ? 'transition-transform duration-1000' : ''}`} style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
+        {images.concat(images.slice(0, 4)).map((image, index) => (
           <div key={index} className="flex-none w-1/4">
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
           </div>
