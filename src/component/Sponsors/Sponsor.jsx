@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const images = [
   "https://twl.techcabal.com/wp-content/uploads/2019/02/Lagos-Initiative.png",
@@ -11,6 +11,18 @@ const images = [
   "https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png"
 ];
 
+const ImageSlider = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0),
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1 ) % images.length);
+    }, 3000);
+  
+    return () => clearInterval(interval);
+  }, []);
+  
+}
 const Sponsor = () => {
   return (
     <section>
