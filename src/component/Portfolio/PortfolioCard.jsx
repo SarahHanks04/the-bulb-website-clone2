@@ -1,5 +1,3 @@
-// src/component/Portfolio/PortfolioCard.jsx
-
 import { faBuildingColumns } from "@fortawesome/free-solid-svg-icons/faBuildingColumns";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons/faDesktop";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons/faLaptopCode";
