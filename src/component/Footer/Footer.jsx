@@ -281,7 +281,7 @@ const Footer = () => {
           {/* COPYRIGHT */}
           <div>
             <p>Copyright &copy; {currentYear} The Bulb. All Rights Reserved.</p>
-          </div>
+          </div>~
 
           <div>
             <p>Contact with Us</p>
