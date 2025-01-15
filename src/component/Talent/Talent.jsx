@@ -25,10 +25,11 @@ const Talent = () => {
           <div classname="relative">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-[#FDBF17] right-[42%] top-[2%]"></div>
-            {/* INNER CIRCLE */}
-            <div className="absolute left-[49.5%] w-5 h-5 bg-yellow-100 rounded-full mt-3">
-              <div className="w-3 h-3 bg-[#FDBF17] rounded-full left-[50%]"></div>
+            {/* INNER Dot */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
+
             {/* INNER TEXT */}
             <div className="ml-[42rem] ">
               <h3 className="text-lg font-bold py-5">StartUp Academy</h3>
@@ -43,10 +44,11 @@ const Talent = () => {
           <div className="relative mb-5">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-gray-400 right-[50%] bottom-[94%]"></div>
-            {/* INNER CIRCLE */}
-            <div className="absolute left-[49.5%] w-5 h-5 bg-gray-200 rounded-full">
-              <div className="w-3 h-3 bg-[#13162D] rounded-full left-[50%]"></div>
+            {/* INNER Dot */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
+
             {/* INNER TEXT */}
             <div className="ml-[10rem] mt-[2rem]">
               <h3 className="text-lg font-bold py-5">Education</h3>
@@ -63,10 +65,11 @@ const Talent = () => {
           <div className="relative mb-10">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-[#FDBF17] right-[42%] bottom-[94%]"></div>
-            {/* INNER CIRCLE */}
-            <div className="absolute left-[49.5%] w-5 h-5 bg-yellow-100 rounded-full">
-              <div className="w-3 h-3 bg-[#FDBF17] rounded-full left-[50%]"></div>
+            {/* INNER Dot */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
+
             {/* INNER TEXT */}
             <div className="ml-[42rem] mt-[2rem]">
               <h3 className="text-lg font-bold py-5">StartUp Engine</h3>
@@ -84,7 +87,7 @@ const Talent = () => {
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-gray-400 right-[50%] bottom-[94%]"></div>
 
-            {/* Timeline Dot */}
+            {/* INNER Dot */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
@@ -103,7 +106,7 @@ const Talent = () => {
           <div className="relative mb-10">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-[#FDBF17] right-[42%] bottom-[94%]"></div>
-            {/* Timeline Dot */}
+            {/* INNER Dot */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
@@ -124,7 +127,7 @@ const Talent = () => {
           <div className="relative mb-5">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-gray-400 right-[50%] bottom-[94%]"></div>
-            {/* Timeline Dot */}
+            {/* INNER Dot */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
@@ -144,7 +147,7 @@ const Talent = () => {
           <div className="relative mb-10">
             {/* INNER LINE */}
             <div className="absolute w-24 h-[2px] bg-[#FDBF17] right-[42%] bottom-[94%]"></div>
-            {/* Timeline Dot */}
+            {/* INNER Dot */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             </div>
